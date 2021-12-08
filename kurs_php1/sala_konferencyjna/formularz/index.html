@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+
+    <link
+      rel="stylesheet"
+      href=""
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" type="image/png" href="img/favicon.png" />
+
+    <title>Formularz</title>
+
+  </head>
+  <body>
+    <div class = "main">
+        <div class="main__left">
+            <div class="tittle">
+                <h1 class="tittle__first-heading">DZIAŁ MARKETINGU</h1> 
+                <p class="tittle__text text" >Sprawdź najnowsze trendy w branży oświetleniowej.</p>
+            </div>
+            <div class="contact-details">
+                <h2 class="contact-details__second-heading second-heading" id="ddd">DANE KONTAKTOWE</h2>
+                <p class="contact-details__text text">
+                    <span>Kom:</span> +48 698 642 853<br>
+                    <span>Tel:</span> +48 61 872 75 03                                    
+                </p>
+            </div>
+            <div class="time">
+                <h2 class="time__second-heading second-heading">GODZINY</h2>
+                <p class="time__text text">Poniedziałek - Piątek 8.00 - 16.00</p>     
+            </div>
+        </div>
+        <div class="main__right">      
+            <form method ="POST" class="contact">
+                <h2 class="contact__form-heading second-heading">FORMULARZ KONTAKTOWY</h2> 
+                <input type="text" class="contact__name" placeholder="Imię i nazwisko*" onclick="this.placeholder=''">    
+                <div class="contact__nr-email">
+                    <input type="email" class="contact__email" placeholder="Adres e-mail*" onclick="this.placeholder=''">
+                    <input type="number" class="contact__number" placeholder="Telefon" onclick="this.placeholder=''" maxlenght="9" minlenght="9">
+                </div>
+                <textarea class="contact__text" placeholder="Wiadomość" onclick="this.placeholder=''"></textarea>
+                <div class="contact__checkbox-box">
+                    <input type="checkbox" class="contact__checkbox" name="agree" id="agree">
+                    <label for="agree" class="contact__checkbox-label" for="agree"><span class="contact__checkbox-icon"></span>asdsad</label>
+                    <p class="contact__checkbox-text text">Wyrażam zgodę na otrzymywanie drogą elektroniczną na wskazany przeze mnie adres e-mail 
+                        informacji dotyczących świadczonych przez Administratora. Zgoda może być cofnięta w każdym czasie. 
+                        Polityka prywatności.</p>
+                </div>
+                <div class="contact__submit-box">
+                    <p class="contact__star text">*pola wymagane</p>
+                    <input type="submit" class="contact__submit" value="Wyślij">
+                </div>
+            </form>
+        </div>
+    </div>
+  </body>
